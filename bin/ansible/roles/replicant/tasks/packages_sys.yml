@@ -1,0 +1,28 @@
+---
+
+- name: Install system packages
+  apt: name="{{ item }}" update_cache=yes state=present
+  with_items:
+    - synaptic
+    - git
+    - curl
+    - wget
+    - unzip
+    - terminator
+    - clipit
+    - gcolor2
+    - audacious
+    - chromium-browser
+    - cryptkeeper
+    - ack-grep
+    - ffmpeg
+    - gparted
+    - pdftk
+    - tree
+    - unetbootin
+    - vim
+    - htop
+    - p7zip-full
+    - gnupg
+    - rsync
+    - ack-grep

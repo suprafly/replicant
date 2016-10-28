@@ -1,0 +1,55 @@
+---
+
+- name: Create bin dir
+  file: path=/home/{{ username }}/.venvs state=directory
+
+- name: Create bin dir
+  file: path=/home/{{ username }}/bin state=directory
+
+- name: Create bin/scripts dir
+  file:  path=/home/{{ username }}/bin/scripts state=directory
+
+- name: Create books dir
+  file:  path=/home/{{ username }}/books state=directory
+
+- name: Create projects dir
+  file:  path=/home/{{ username }}/projects state=directory
+
+- name: Create projects/elixir dir
+  file:  path=/home/{{ username }}/projects/elixir state=directory
+
+- name: Create projects/python dir
+  file:  path=/home/{{ username }}/projects/python state=directory
+
+- name: Create projects/web dir
+  file:  path=/home/{{ username }}/projects/web state=directory
+
+- name: Create projects/clients dir
+  file:  path=/home/{{ username }}/projects/clients state=directory
+
+- name: Create cv dir
+  file:  path=/home/{{ username }}/cv state=directory
+
+- name: Create docs dir
+  file:  path=/home/{{ username }}/docs state=directory
+
+- name: Create lib dir
+  file:  path=/home/{{ username }}/lib state=directory
+
+- name: Create media dir
+  file:  path=/home/{{ username }}/media state=directory
+
+- name: Create talks dir
+  file:  path=/home/{{ username }}/media/talks state=directory
+
+- name: Create research dir
+  file:  path=/home/{{ username }}/research state=directory
+
+- name: Create tmp dir
+  file:  path=/home/{{ username }}/tmp state=directory
+
+- name: Create logs dir
+  file:  path=/home/{{ username }}/logs state=directory
+
+- name: Create travel dir
+  file:  path=/home/{{ username }}/travel state=directory

@@ -1,0 +1,10 @@
+---
+
+- name: Create ~/.ssh
+  file: path=/home/{{ username }}/.ssh state=directory
+
+# Use one of the following method to extract keys
+# - name: Extract keys
+#   command: 7z x {{ cwd }}/bin/data/zip/.ssh.zip -p{{zip_pass}} -o/home/{{ username }}/.ssh -aoa
+
+# - authorized_key: user={{ username }} key="{{ lookup('file', '/home/{{ username }}/.ssh/id_rsa.pub')}}"

@@ -1,0 +1,30 @@
+---
+
+- name: Add Erlang repo
+  apt_repository: repo='deb http://packages.erlang-solutions.com/ubuntu xenial contrib'
+
+- name: Add Erlang repo key
+  apt_key: url=https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
+
+- name: Install Erlang
+  apt: 
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+    allow_unauthenticated: yes
+  with_items:
+    - esl-erlang
+
+- name: Install Elixir
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+    allow_unauthenticated: yes
+  with_items:
+    - elixir
+
+- name: Install inotify-tools package
+  apt: pkg={{ item }} state=latest update_cache=yes
+  with_items:
+    - inotify-tools

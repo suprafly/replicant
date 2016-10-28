@@ -1,0 +1,5 @@
+---
+
+- name: Copy Bash files
+  copy: src={{ cwd }}/bin/data/bash dest=/home/{{ username }}/ owner={{ username }} mode="u=rw"
+

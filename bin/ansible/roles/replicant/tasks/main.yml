@@ -1,0 +1,25 @@
+---
+
+- include: setup.yml
+
+- include: dir_structure.yml
+
+- include: packages_sys.yml
+
+- include: packages_dev.yml
+
+- include: packages_rep.yml
+
+- include: packages_ext.yml
+
+- include: config_sys.yml
+
+- include: config_bash.yml
+
+- include: config_xfce.yml
+
+- include: git.yml
+
+- include: dev_python.yml
+
+- include: dev_elixir.yml

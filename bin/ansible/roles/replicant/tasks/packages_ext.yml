@@ -1,0 +1,19 @@
+---
+
+- name: Create ~/Downloads/_replicant/ dir
+  file: path=~/Downloads/_replicant/ state=directory
+
+#- name: Download Synergy
+#  get_url: url=http://symless.com/download/file?file=synergy-v1.8.2-stable-36cd521-Linux-x86_64.deb dest=~/Downloads/_replicant/synergy.deb
+
+#- name: Install Synergy
+#  apt: deb=~/Downloads/_replicant/synergy.deb
+
+- name: Install Synergy 1.8
+  apt: deb={{ cwd }}/bin/data/debs/synergy-v1.8.2-stable-36cd521-Linux-x86_64.deb
+
+- name: Download Chrome
+  get_url: url=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb dest=~/Downloads/_replicant/chrome.deb
+
+- name: Install Chrome
+  apt: deb=~/Downloads/_replicant/chrome.deb

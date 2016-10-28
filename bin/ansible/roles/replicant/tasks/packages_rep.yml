@@ -1,0 +1,33 @@
+---
+
+- name: Add keepassx repo
+  apt_repository: repo='ppa:eugenesan/ppa'
+
+- name: Install keepassx
+  apt: pkg={{ item }} update_cache=yes
+  with_items:
+    - keepassx
+
+- name: Add SublimeText3 repo
+  apt_repository: repo='ppa:webupd8team/sublime-text-3'
+
+- name: Install SublimeText3
+  apt: pkg={{ item }} update_cache=yes
+  with_items:
+    - sublime-text-installer
+
+- name: Add tlp repo
+  apt_repository: repo='ppa:linrunner/tlp'
+
+- name: Install tlp
+  apt: pkg={{ item }} update_cache=yes
+  with_items:
+    - tlp
+    - tlp-rdw
+
+# # If Thinkpad:
+# - name: Install tlp
+#   apt: pkg={{ item }} update_cache=yes
+#   with_items:
+#     - tp-smapi-dkms
+#     - acpi-call-dkms

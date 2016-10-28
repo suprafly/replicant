@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  become: yes
+  become_method: sudo
+  roles:
+    - { role: replicant }
+
+  vars_prompt:
+    - name: "zip_pass"
+      prompt: "Enter password for extracting zip files"
+      private: yes

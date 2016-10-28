@@ -1,0 +1,10 @@
+---
+
+- name: Install dev-server packages
+  apt: name="{{ item }}" update_cache=yes state=present
+  with_items:
+    - nginx
+    - siege
+    - vagrant
+    - virtualbox
+    - wrk

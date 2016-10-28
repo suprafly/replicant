@@ -1,0 +1,22 @@
+---
+
+- name: Copy Wallpaper
+  copy: src={{ cwd }}/bin/data/img/wallpaper dest=/home/{{ username }}/Pictures/ owner={{ username }} mode="u=rw"
+
+- name: Copy XFCE Config
+  copy: src={{ cwd }}/bin/data/config/xfce4 dest=/home/{{ username }}/.config/ owner={{ username }} mode="u=rw"
+
+- name: Copy Terminator Config
+  copy: src={{ cwd }}/bin/data/config/terminator dest=/home/{{ username }}/.config/ owner={{ username }} mode="u=rw"
+
+- name: Copy Synergy Config
+  copy: src={{ cwd }}/bin/data/config/Synergy dest=/home/{{ username }}/.config/ owner={{ username }} mode="u=rw"
+
+- name: Copy Thunar Config
+  copy: src={{ cwd }}/bin/data/config/Thunar dest=/home/{{ username }}/.config/ owner={{ username }} mode="u=rw"
+
+- name: Copy SublimeText3 Config
+  copy: src={{ cwd }}/bin/data/config/sublime-text-3 dest=/home/{{ username }}/.config/ owner={{ username }} mode="u=rw"
+
+- name: Copy SublimeText3 License
+  copy: src={{ cwd }}/bin/data/etc/License.sublime_license dest=/home/{{ username }}/.config/sublime-text-3/Local owner={{ username }} mode="u=rw"

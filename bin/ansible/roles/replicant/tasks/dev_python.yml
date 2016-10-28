@@ -1,0 +1,18 @@
+---
+
+- name: Install pip
+  apt: name="{{ item }}" update_cache=yes state=present
+  with_items:
+    - python-pip
+ 
+- name: Upgrade pip
+  command: pip install --upgrade pip
+
+- name: Install virtualenv
+  command: pip install virtualenv
+
+- name: Install virtualenv-wrapper
+  command: pip install virtualenvwrapper
+
+- name: Install youtube-dl
+  command: pip install youtube-dl
