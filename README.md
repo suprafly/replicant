@@ -1,10 +1,4 @@
 # Replicant
-__________              .__  .__                      __
-\______   \ ____ ______ |  | |__| ____ _____    _____/  |_ 
- |       _// __ \\____ \|  | |  |/ ___\\__  \  /    \   __\
- |    |   \  ___/|  |_> >  |_|  \  \___ / __ \|   |  \  |
- |____|_  /\___  >   __/|____/__|\___  >____  /___|  /__|
-        \/     \/|__|                \/     \/     \/     
 
 Replicant is an automation script to creates an identical copy of your machine on a fresh (Xubuntu) install.
 
