@@ -6,6 +6,17 @@ It has been optimized for XFCE settings, but it is certainly not limited to this
 
 Some sample defaults have been left to illustrate how to implement the basic Ansible tasks that you will need. Customize and conquer!
 
+## Usage
+
+Open a terminal in this directory and run: `./replicant.sh`
+
+I keep this on a USB stick, and I run it directly off of the stick. In Thunar this is trivial:
+
+* Mount and open the drive
+* Open this directory
+* Right-click -> 'Open Terminal Here'
+* ./replicate.sh 
+
 ## Instructions
 
 You'll need to edit some Ansible tasks to get this to work. You can find them in: `bin/ansible/roles/replicant/tasks`
