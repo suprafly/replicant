@@ -1,55 +1,55 @@
 ---
 
-- name: Create bin dir
+- name: Create =/home/{{ username }}/.venv 
   file: path=/home/{{ username }}/.venvs state=directory
 
-- name: Create bin dir
+- name: Create /home/{{ username }}/bin
   file: path=/home/{{ username }}/bin state=directory
 
-- name: Create bin/scripts dir
+- name: Create /home/{{ username }}/bin/scripts
   file:  path=/home/{{ username }}/bin/scripts state=directory
 
-- name: Create books dir
+- name: Create /home/{{ username }}/books
   file:  path=/home/{{ username }}/books state=directory
 
-- name: Create projects dir
+- name: Create /home/{{ username }}/projects
   file:  path=/home/{{ username }}/projects state=directory
 
-- name: Create projects/elixir dir
+- name: Create /home/{{ username }}/projects/elixir
   file:  path=/home/{{ username }}/projects/elixir state=directory
 
-- name: Create projects/python dir
+- name: Create /home/{{ username }}/projects/python
   file:  path=/home/{{ username }}/projects/python state=directory
 
-- name: Create projects/web dir
+- name: Create /home/{{ username }}/projects/web
   file:  path=/home/{{ username }}/projects/web state=directory
 
-- name: Create projects/clients dir
+- name: Create /home/{{ username }}/projects/clients
   file:  path=/home/{{ username }}/projects/clients state=directory
 
-- name: Create cv dir
+- name: Create /home/{{ username }}/cv
   file:  path=/home/{{ username }}/cv state=directory
 
-- name: Create docs dir
+- name: Create /home/{{ username }}/docs
   file:  path=/home/{{ username }}/docs state=directory
 
-- name: Create lib dir
+- name: Create /home/{{ username }}/lib
   file:  path=/home/{{ username }}/lib state=directory
 
-- name: Create media dir
+- name: Create /home/{{ username }}/media
   file:  path=/home/{{ username }}/media state=directory
 
-- name: Create talks dir
+- name: Create /home/{{ username }}/media/talks
   file:  path=/home/{{ username }}/media/talks state=directory
 
-- name: Create research dir
+- name: Create /home/{{ username }}/research
   file:  path=/home/{{ username }}/research state=directory
 
-- name: Create tmp dir
+- name: Create /home/{{ username }}/tmp
   file:  path=/home/{{ username }}/tmp state=directory
 
-- name: Create logs dir
+- name: Create /home/{{ username }}/logs
   file:  path=/home/{{ username }}/logs state=directory
 
-- name: Create travel dir
+- name: Create /home/{{ username }}/travel
   file:  path=/home/{{ username }}/travel state=directory

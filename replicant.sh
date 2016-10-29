@@ -14,4 +14,4 @@ echo
 echo
 echo "Starting Replicant..."
 echo
-sudo ./bin/scripts/run_ansible.sh
+./bin/scripts/run_ansible.sh
