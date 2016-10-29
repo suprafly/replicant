@@ -15,3 +15,6 @@ echo
 echo "Starting Replicant..."
 echo
 ./bin/scripts/run_ansible.sh
+
+read -p "In order for the changes to take place, Replicant needs to re-login. Press [Enter] log out now.."
+xfce4-session-logout --logout
