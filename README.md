@@ -15,7 +15,7 @@ I keep this on a USB stick, and I run it directly off of the stick. In Thunar th
 * Mount and open the drive
 * Open this directory
 * Right-click -> 'Open Terminal Here'
-* ./replicate.sh 
+* ./replicant.sh 
 
 ## Instructions
 
